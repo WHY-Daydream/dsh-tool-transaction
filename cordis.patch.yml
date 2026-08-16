@@ -1,0 +1,7 @@
+# dsh-tool-transaction bundle patch: inserts the transaction service row into
+# the profile tree. The service is provided by this plugin; consumers (tools,
+# workflows, other plugins) use `ctx.transaction` to run Saga-style steps with
+# reverse-order compensation.
+- insert:
+    - id: tool-transaction
+      name: '@why-daydream/dsh-tool-transaction'
